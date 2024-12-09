@@ -27,6 +27,8 @@
               }
             ],
             "styles": [
+              "src/tailwind.css",
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -90,6 +92,8 @@
               }
             ],
             "styles": [
+              "src/tailwind.css",
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -97,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8208a2c2-fc58-48c1-9ed3-3b270f465105"
   }
 }

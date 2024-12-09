@@ -1,0 +1,86 @@
+<mat-toolbar color="primary" class="fixed top-0 m-1 z-10 justify-between">
+  <div class="md:hidden  max-lg:hidden">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div class="flex items-center mx-auto md:flex md:mx-0">
+    <div class="logo">
+      <img src="/swipall.png" alt="logo Swipall" class="h-14 md:h-16">
+    </div>
+    <div class="hidden md:flex justify-between w-auto items-center ">
+      <a  href="#" class="m-2 p-2 text-base">Inicio</a>
+      <a  href="#" class="m-2 p-2 text-base">Punto de venta</a>
+      <a  href="#" class="m-2 p-2 text-base">Ventas</a>
+      <a  href="#" class="m-2 p-2 text-base">Compras</a>
+      <a  href="#" class="m-2 p-2 text-base">Clientes</a>
+      <a  href="#" class="m-2 p-2 text-base">Inventario</a>
+    </div>
+  </div>
+  <div class="hidden md:flex items-center">
+    <div class="flex space-x-4 max-lg:space-x-3">
+      <button mat-icon-button aria-label="help button">
+        <mat-icon>support</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="maximize button">
+        <mat-icon>fullscreen</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="notifications button">
+        <mat-icon>notifications_none</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="apps button">
+        <mat-icon>apps</mat-icon>
+      </button>
+    </div>
+      <div class="flex items-center ml-2 border-solid border-2 border-gray-500 rounded-3xl max-w-44 h-10 p-2">
+        <button class="px-0" mat-icon-button aria-label="user button" >
+          <mat-icon>account_circle</mat-icon>
+        </button>
+        <div class=" grid grid-cols-1 grid-rows-2">
+          <a class="font-bold text-sm">Bikini Sunset</a>
+          <a class="user-address text-gray-500 text-xs">Succ. Vallarta Jal.</a>
+        </div>
+      </div>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container >
+  <mat-sidenav #sidenav mode="over" class="text-gris h-auto" (closedStart)="closeMenu()">
+    <mat-nav-list>
+      <a mat-list-item href="#" class="hover:bg-gray-700">Inicio</a>
+      <a mat-list-item href="#">Punto de venta</a>
+      <a mat-list-item href="#">Ventas</a>
+      <a mat-list-item href="#">Compras</a>
+      <a mat-list-item href="#">Clientes</a>
+      <a mat-list-item href="#">Inventario</a>
+    </mat-nav-list>
+    <mat-divider></mat-divider>
+    <div class="mt-4 space-y-4">
+      <button mat-icon-button aria-label="help button">
+        <mat-icon>support</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="maximize button">
+        <mat-icon>fullscreen</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="notifications button">
+        <mat-icon>notifications_none</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="apps button">
+        <mat-icon>apps</mat-icon>
+      </button>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="flex items-center mt-4">
+      <button mat-icon-button aria-label="user button">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <div>
+        <h4 class="font-bold">Bikini Sunset</h4>
+        <h5 class="text-gray-500">Succ. Vallarta Jal.</h5>
+      </div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

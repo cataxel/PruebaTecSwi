@@ -1,0 +1,9 @@
+.actualizacion, .phone{
+  @apply flex items-center justify-between w-fit rounded-full text-base m-2 font-medium;
+}
+.actualizacion{
+  @apply bg-gris_bajo text-texto_gris;
+}
+.phone{
+  @apply bg-azul text-blanco;
+}

@@ -1,0 +1,22 @@
+/*
+.footer-text {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.footer-text .highlight {
+  color: #0EA5E9;
+}
+
+.footer-text .year {
+  color: black;
+}
+
+.footer-text .version {
+  color: #64748B;
+}*/

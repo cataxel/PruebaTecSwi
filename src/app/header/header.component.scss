@@ -1,0 +1,16 @@
+
+.mat-sidenav-container {
+  margin-top: 3rem;
+  position: relative !important;
+  z-index: 1;
+  overflow: visible !important;
+}
+.mat-drawer {
+  position: fixed !important;
+  z-index: 10 !important;
+  top: 3rem;
+  left: 0;
+  width: 16rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
